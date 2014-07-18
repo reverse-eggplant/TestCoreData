@@ -21,6 +21,11 @@
 		6ED9AD4519206941002018EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED9AD2719206941002018EF /* UIKit.framework */; };
 		6ED9AD4D19206941002018EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6ED9AD4B19206941002018EF /* InfoPlist.strings */; };
 		6ED9AD4F19206941002018EF /* TestCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED9AD4E19206941002018EF /* TestCoreDataTests.m */; };
+		6ED9AD5919206951002018EF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED9AD5819206951002018EF /* CoreData.framework */; };
+		6ED9AD5C192069A7002018EF /* CDMaLong.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6ED9AD5A192069A7002018EF /* CDMaLong.xcdatamodeld */; };
+		6ED9AD6819206C92002018EF /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED9AD6719206C92002018EF /* Entity.m */; };
+		6ED9AD6A19207A34002018EF /* CDMaLong.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6ED9AD6919207A34002018EF /* CDMaLong.sqlite */; };
+		6ED9AD6C19207A46002018EF /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED9AD6B19207A46002018EF /* libsqlite3.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,12 @@
 		6ED9AD4A19206941002018EF /* TestCoreDataTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestCoreDataTests-Info.plist"; sourceTree = "<group>"; };
 		6ED9AD4C19206941002018EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6ED9AD4E19206941002018EF /* TestCoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCoreDataTests.m; sourceTree = "<group>"; };
+		6ED9AD5819206951002018EF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6ED9AD5B192069A7002018EF /* CDMaLong.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CDMaLong.xcdatamodel; sourceTree = "<group>"; };
+		6ED9AD6619206C92002018EF /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		6ED9AD6719206C92002018EF /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
+		6ED9AD6919207A34002018EF /* CDMaLong.sqlite */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CDMaLong.sqlite; sourceTree = "<group>"; };
+		6ED9AD6B19207A46002018EF /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED9AD6C19207A46002018EF /* libsqlite3.0.dylib in Frameworks */,
+				6ED9AD5919206951002018EF /* CoreData.framework in Frameworks */,
 				6ED9AD2619206941002018EF /* CoreGraphics.framework in Frameworks */,
 				6ED9AD2819206941002018EF /* UIKit.framework in Frameworks */,
 				6ED9AD2419206941002018EF /* Foundation.framework in Frameworks */,
@@ -101,6 +114,8 @@
 		6ED9AD2219206941002018EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6ED9AD6B19207A46002018EF /* libsqlite3.0.dylib */,
+				6ED9AD5819206951002018EF /* CoreData.framework */,
 				6ED9AD2319206941002018EF /* Foundation.framework */,
 				6ED9AD2519206941002018EF /* CoreGraphics.framework */,
 				6ED9AD2719206941002018EF /* UIKit.framework */,
@@ -127,6 +142,10 @@
 			isa = PBXGroup;
 			children = (
 				6ED9AD2B19206941002018EF /* TestCoreData-Info.plist */,
+				6ED9AD5A192069A7002018EF /* CDMaLong.xcdatamodeld */,
+				6ED9AD6919207A34002018EF /* CDMaLong.sqlite */,
+				6ED9AD6619206C92002018EF /* Entity.h */,
+				6ED9AD6719206C92002018EF /* Entity.m */,
 				6ED9AD2C19206941002018EF /* InfoPlist.strings */,
 				6ED9AD2F19206941002018EF /* main.m */,
 				6ED9AD3119206941002018EF /* TestCoreData-Prefix.pch */,
@@ -229,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED9AD6A19207A34002018EF /* CDMaLong.sqlite in Resources */,
 				6ED9AD3C19206941002018EF /* Images.xcassets in Resources */,
 				6ED9AD2E19206941002018EF /* InfoPlist.strings in Resources */,
 				6ED9AD3719206941002018EF /* Main.storyboard in Resources */,
@@ -250,8 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED9AD6819206C92002018EF /* Entity.m in Sources */,
 				6ED9AD3A19206941002018EF /* SXViewController.m in Sources */,
 				6ED9AD3019206941002018EF /* main.m in Sources */,
+				6ED9AD5C192069A7002018EF /* CDMaLong.xcdatamodeld in Sources */,
 				6ED9AD3419206941002018EF /* SXAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +489,20 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6ED9AD5A192069A7002018EF /* CDMaLong.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6ED9AD5B192069A7002018EF /* CDMaLong.xcdatamodel */,
+			);
+			currentVersion = 6ED9AD5B192069A7002018EF /* CDMaLong.xcdatamodel */;
+			name = CDMaLong.xcdatamodeld;
+			path = ../CDMaLong.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6ED9AD1819206941002018EF /* Project object */;
 }
